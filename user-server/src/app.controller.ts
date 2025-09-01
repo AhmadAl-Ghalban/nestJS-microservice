@@ -18,7 +18,7 @@ export class AppController {
   // Get all users Message Pattern (Request-Response) for Microservice
   @MessagePattern({ cmd: 'CREATE_USER' })
   createUser(user: any) {
-   return this.appService.createUser(user);
+    return this.appService.createUser(user);
   }
   @MessagePattern({ cmd: 'GET_ALL_USER' })
   getUsers() {
